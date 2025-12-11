@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import { useRouter } from 'expo-router';
 import BottomNav from '../components/BottomNav';
+import WelcomeBanner from '../components/WelcomeBanner';
 
 export default function Home() {
   const router = useRouter();
@@ -45,6 +46,9 @@ export default function Home() {
         <View style={styles.greetingContainer}>
           <Text style={styles.greetingText}>Hi, User</Text>
         </View>
+
+        {/* Welcome Banner */}
+        <WelcomeBanner />
 
         {/* Categories */}
         <ScrollView 
