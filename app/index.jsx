@@ -11,6 +11,7 @@ import {
 import { useRouter } from 'expo-router';
 import BottomNav from '../components/BottomNav';
 import WelcomeBanner from '../components/WelcomeBanner';
+import TopHeader from '../components/TopHeader';
 
 export default function Home() {
   const router = useRouter();
@@ -24,31 +25,10 @@ export default function Home() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="light-content" backgroundColor="#000000" />
+      
       <ScrollView style={styles.scrollView} showsVerticalScrollIndicator={false}>
-        {/* Header */}
-        <View style={styles.header}>
-          <View style={styles.avatar}>
-            <Text style={styles.avatarText}>U</Text>
-          </View>
-          
-          <View style={styles.headerIcons}>
-            <TouchableOpacity style={styles.iconButton}>
-              <Text style={styles.iconText}>🔍</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.iconButton}>
-              <Text style={styles.iconText}>❤️</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-
-        {/* Greeting */}
-        <View style={styles.greetingContainer}>
-          <Text style={styles.greetingText}>Hi, User</Text>
-        </View>
-
-        {/* Welcome Banner */}
-        <WelcomeBanner />
+        <TopHeader />
+         <WelcomeBanner />
 
         {/* Categories */}
         <ScrollView 

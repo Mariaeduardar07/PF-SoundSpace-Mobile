@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   banner: {
-    backgroundColor: '#c084fc',
+    backgroundColor: '#D19DF0',
     borderRadius: 20,
     padding: 20,
     paddingTop: 16,
@@ -83,8 +83,8 @@ const styles = StyleSheet.create({
   characterImage: {
     position: 'absolute',
     right: 0,
-    bottom: -20,
-    width: 180,
-    height: 180,
+    bottom: -25,
+    width: 200,
+    height: 200,
   },
 });
